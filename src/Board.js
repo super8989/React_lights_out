@@ -4,9 +4,15 @@ import Cell from './Cell';
 class Board extends Component {
 	render() {
 		return (
-			<div>
-				<Cell />
-			</div>
+      <table>
+        <tbody>
+          <tr>
+            <Cell isLit={false} />
+            <Cell isLit={true} />
+            <Cell isLit={false} />
+          </tr>
+        </tbody>
+      </table>
 		);
 	}
 }
